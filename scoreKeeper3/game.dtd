@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT game (title?, round+)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT round (number?,questionset+)>
+<!ELEMENT number (#PCDATA)>
+<!ELEMENT questionset (directions,item+)>
+<!ELEMENT directions (#PCDATA)>
+<!ELEMENT item (question,answer)>
+<!ELEMENT question (#PCDATA)>
+<!ELEMENT answer (#PCDATA)>

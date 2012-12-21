@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE game PUBLIC "Scorekeeper Game" "game.dtd">
+
+<game>
+	<title>Simple Math</title>
+	<round>
+		<number>1</number>
+		<questionset>
+			<directions>Evaluate each expression</directions>
+			<item>
+				<question>2*3</question>
+				<answer>6</answer>
+			</item>
+			<item>
+				<question>2*4</question>
+				<answer>8</answer>
+			</item>
+		</questionset>	
+		<questionset>
+			<directions>Solve each equation</directions>
+			<item>
+				<question>2x=4</question>
+				<answer>2</answer>
+			</item>
+			<item>
+				<question>4x=12</question>
+				<answer>3</answer>
+			</item>
+		</questionset>
+	</round>
+	<round>
+		<number>2</number>
+		<questionset>
+			<directions>Evaluate each expression</directions>
+			<item>
+				<question>4*3</question>
+				<answer>12</answer>
+			</item>
+			<item>
+				<question>4*4</question>
+				<answer>16</answer>
+			</item>
+		</questionset>	
+		<questionset>
+			<directions>Solve each equation</directions>
+			<item>
+				<question>4x=4</question>
+				<answer>1</answer>
+			</item>
+			<item>
+				<question>8x=12</question>
+				<answer>1.5</answer>
+			</item>
+		</questionset>
+	</round>
+</game>
