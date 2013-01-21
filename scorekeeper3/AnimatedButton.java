@@ -1,4 +1,4 @@
-package scoreKeeper3;
+package scorekeeper3;
 //TODO: implement a vectored color class
 //TODO: Implement gif animation of icon
 //TODO: move the timer that fires events into this class rather than in the scorekeeper.

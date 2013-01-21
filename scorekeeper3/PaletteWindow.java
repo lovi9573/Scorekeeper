@@ -1,4 +1,4 @@
-package scoreKeeper3;
+package scorekeeper3;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;

@@ -1,4 +1,4 @@
-package scoreKeeper3;
+package scorekeeper3;
 
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
@@ -6,7 +6,6 @@ import java.io.Serializable;
 
 import javax.swing.JTextField;
 
-import scoreKeeper3.ScoreKeeper.finalJeapordyStates;
 
 /*
  * Description:  Wrapper for all classes associated with a table of participants.
@@ -123,7 +122,7 @@ public class Table implements MouseListener,Serializable {
 			tablePanel.repaint();
 			miniTablePanel.repaint();
 		}
-		if (e.getClickCount()==1 && parent.finalJeapordyState == finalJeapordyStates.WAITINGFORWAGERS){
+		if (e.getClickCount()==1 && parent.finalJeapordyState == ScoreKeeper.finalJeapordyStates.WAITINGFORWAGERS){
 			
 			if (e.getButton() == e.BUTTON1){
 				tablePanel.openWagerBox(0);
@@ -146,7 +145,7 @@ public class Table implements MouseListener,Serializable {
 
 	public void mousePressed(MouseEvent e) {
 		// 
-		if (parent.finalJeapordyState != finalJeapordyStates.WAITINGFORWAGERS){
+		if (parent.finalJeapordyState != ScoreKeeper.finalJeapordyStates.WAITINGFORWAGERS){
 			if (parent.editState) {
 				new PointEditorDialog(this,"Enter Adjusted Points", true);
 			}
@@ -156,7 +155,7 @@ public class Table implements MouseListener,Serializable {
 					isCorrect = true;
 				}
 				tablePoints.newPoints = parent.registerAnswer(position, isCorrect);
-				if (parent.finalJeapordyState == finalJeapordyStates.WAITINGFORANSWERS){
+				if (parent.finalJeapordyState == ScoreKeeper.finalJeapordyStates.WAITINGFORANSWERS){
 					int wageredPoints = Integer.valueOf(tablePanel.m_WagerText.getText());
 					if (wageredPoints > tablePoints.points){
 						wageredPoints = tablePoints.points;

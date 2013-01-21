@@ -1,7 +1,7 @@
 
 
 
-package scoreKeeper3;
+package scorekeeper3;
 
 import java.awt.*;
 import javax.swing.JButton;

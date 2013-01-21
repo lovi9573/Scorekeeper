@@ -1,4 +1,4 @@
-package scoreKeeper3;
+package scorekeeper3;
 
 import java.awt.Color;
 import java.awt.Dimension;

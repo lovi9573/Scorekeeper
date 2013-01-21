@@ -1,7 +1,7 @@
 /**
  * 
  */
-package scoreKeeper3;
+package scorekeeper3;
 
 import javax.swing.JPanel;
 import javax.swing.JButton;
@@ -16,7 +16,6 @@ import javax.swing.border.LineBorder;
 import javax.swing.plaf.basic.BasicLookAndFeel;
 import java.awt.event.*;
 
-import scoreKeeper3.ScoreKeeper.finalJeapordyStates;
 
 /**Guess what....its a button bar that is owned by the ScoreKeeper JFrame
  * @author user

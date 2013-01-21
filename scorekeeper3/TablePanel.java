@@ -1,4 +1,4 @@
-package scoreKeeper3;
+package scorekeeper3;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -14,7 +14,6 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.border.EtchedBorder;
 
-import scoreKeeper3.ScoreKeeper.finalJeapordyStates;
 
 /* This is the graphical manager for the Table.  this object is owned by its Table object
  * 
@@ -62,7 +61,7 @@ public class TablePanel extends JPanel {
 		//Paint the last Points Gotten or wagered points
 		String num = new String(String.valueOf(parent.getLastPointsRecieved()));
 		graphics.setColor(ScoreKeeper.BLACK);
-		if (parent.parent.finalJeapordyState == finalJeapordyStates.WAITINGFORANSWERS){
+		if (parent.parent.finalJeapordyState == ScoreKeeper.finalJeapordyStates.WAITINGFORANSWERS){
 			graphics.setColor(ScoreKeeper.DARK_RED);
 			num = m_WagerText.getText();
 			if (Integer.valueOf(num) > parent.getPoints()){num = new String(String.valueOf(parent.getPoints()));}
@@ -109,7 +108,7 @@ public class TablePanel extends JPanel {
 	}
 	
 	public void openWagerBox(int defaultPoints){
-		if (parent.parent.finalJeapordyState == finalJeapordyStates.WAITINGFORWAGERS){
+		if (parent.parent.finalJeapordyState == ScoreKeeper.finalJeapordyStates.WAITINGFORWAGERS){
 			//TODO:Figure this textbox out!
 			m_WagerText.setText(String.valueOf(defaultPoints));
 			m_WagerText.setVisible(true);

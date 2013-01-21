@@ -1,4 +1,4 @@
-package scoreKeeper3;
+package scorekeeper3;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

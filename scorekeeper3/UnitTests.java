@@ -1,4 +1,5 @@
-package scoreKeeper3;
+package scorekeeper3;
+
 
 public class UnitTests {
 

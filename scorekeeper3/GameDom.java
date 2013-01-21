@@ -1,4 +1,4 @@
-package scoreKeeper3;
+package scorekeeper3;
 
 import java.io.IOException;
 import java.util.ArrayList;
